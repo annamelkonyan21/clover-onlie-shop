@@ -2,7 +2,6 @@ import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CarouselModule} from 'ngx-owl-carousel-o';
-import {ToastrModule} from 'ngx-toastr';
 
 //components
 import {
@@ -14,7 +13,8 @@ import {
     ProductSortComponent
 } from "./components";
 
-import {PricePipe} from './pipe/price.pipe';
+//pipes
+import {PricePipe} from './pipes';
 
 
 @NgModule({
@@ -32,7 +32,6 @@ import {PricePipe} from './pipe/price.pipe';
         CarouselModule,
         FormsModule,
         ReactiveFormsModule,
-        ToastrModule.forRoot(),
     ],
     exports: [
         CategoryComponent,

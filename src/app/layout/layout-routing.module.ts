@@ -5,11 +5,16 @@ import {CanActivateUserGuard} from '../core/guard/canActivate.guard';
 
 const routes: Routes = [
     {
+
         path: '',
+        pathMatch: 'full',
+        redirectTo: 'app'
+    }, {
+        path: 'app',
         component: LayoutComponent,
         children: [
             {
-                path: 'categories',
+                path: '',
                 loadChildren: () => import('../dashboard/dashboard.module' )
                     .then(m => m.DashboardModule)
             },

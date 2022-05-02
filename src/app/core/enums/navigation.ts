@@ -1,10 +1,10 @@
 export enum NavigationUrlEnum {
-    Dashboard = 'dashboard',
+    Dashboard = 'app/dashboard',
     Register = 'auth/register',
     Login = 'auth/login',
 
-    Collections = 'collections',
-    CollectionsView = 'collections/{0}',
+    Collections = 'app/collections',
+    CollectionsView = 'app/collections/{0}',
 
-    Account = 'Account'
+    Account = 'app/account'
 }

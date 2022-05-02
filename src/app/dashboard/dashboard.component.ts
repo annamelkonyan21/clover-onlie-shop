@@ -4,6 +4,7 @@ import {CategoriesService} from '../core/services/categories/categories.service'
 import {AuthService} from "../core/services/auth/auth.service";
 import {ICategory} from "../core/interfaces";
 import {NavigationUrlEnum} from "../core/enums";
+import {CategoriesPathEnum} from "../core/enums/caegories-path";
 
 @Component({
     selector: 'app-root',
@@ -24,6 +25,8 @@ export class DashboardComponent {
     shopNow(): void {
         if (!this.authService.user()) {
             this.router.navigateByUrl(NavigationUrlEnum.Login).then();
+        } else {
+            this.navigateToCategory(CategoriesPathEnum.Woman);
         }
     }
 

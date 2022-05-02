@@ -2,15 +2,15 @@
     <div class="head-info">
         <div class="head-main-info">
             <img class="logo" src="assets/img/logo.svg">
-            <a [routerLink]="'/categories'" class="title">{{pageName | uppercase}}</a>
+            <a (click)="navigateToDashboard()" class="title">{{pageName | uppercase}}</a>
         </div>
         <div class="head-sub-info">
             <p>Smarter Shopping, Better Living!</p>
         </div>
     </div>
-    <div class="account">
+    <div class="head-account-info">
         <span *ngIf="user">{{user.firstName}} {{user.lastName}}</span>
-        <i class="icon icon-user" (click)="account()"></i>
+        <i class="icon icon-user" (click)="navigateToAccount()"></i>
         <ng-container *ngIf="!user; else close">
             <i class="icon icon-enter" (click)="login()"></i>
         </ng-container>

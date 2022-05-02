@@ -1,6 +1,6 @@
 <div class="head-main-info">
     <img class="logo" src="assets/img/logo.svg" alt="logo">
-    <a [routerLink]="'/categories'" class="title">{{pageName | uppercase}}</a>
+    <a (click)="navigateToDashboard()"  class="title">{{pageName | uppercase}}</a>
 </div>
 <div class="title">{{type}}</div>
 <div class="main-body">

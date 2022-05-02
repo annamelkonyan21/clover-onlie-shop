@@ -32,7 +32,11 @@ export class HeaderComponent {
         this.user = this.authService.user();
     }
 
-    account() {
+    navigateToAccount() {
         this.router.navigateByUrl(NavigationUrlEnum.Account).then();
+    }
+
+    navigateToDashboard() {
+        this.router.navigateByUrl(NavigationUrlEnum.Dashboard).then();
     }
 }

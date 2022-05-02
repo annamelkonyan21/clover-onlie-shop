@@ -27,4 +27,7 @@ export class AuthComponent {
         }
     }
 
+    navigateToDashboard():void {
+        this.route.navigateByUrl(NavigationUrlEnum.Dashboard).then();
+    }
 }
