@@ -1,0 +1,41 @@
+@import '../../../assets/styles/variables.scss';
+
+.product {
+
+    app-carousel {
+        display: flex;
+        justify-content: center;
+
+        owl-carousel-o {
+            width: 80%;
+        }
+    }
+
+    .product-title {
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        font-style: oblique;
+        color: $color;
+    }
+
+    .discount {
+        color: $dark-hover-color;
+        text-decoration-line: line-through;
+    }
+
+    .product-description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: $color;
+
+            span {
+                color: $dark-hover-color;
+            }
+        }
+    }
+}

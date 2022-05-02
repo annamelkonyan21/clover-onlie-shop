@@ -1,0 +1,31 @@
+@import "src/assets/styles/variables";
+
+.top-nav-bar {
+
+    display: block;
+    padding: 10px;
+
+    .nav-bar {
+        display: flex;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            border-bottom: 0;
+
+            li {
+                width: 15%;
+                color: $sub-color;
+
+                &:hover {
+                    color: $dark-hover-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

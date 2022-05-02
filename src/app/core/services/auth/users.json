@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "bear@gmail.com",
+            "password": "Bear8#",
+            "firstName": "Bear",
+            "lastName": "Bear",
+            "address": "",
+            "phoneNumber": ""
+        },
+        {
+            "id": 2,
+            "email": "mouse@gmail.com",
+            "password": "Mouse7#",
+            "firstName": "Micky",
+            "lastName": "Mouse",
+            "address": "",
+            "phoneNumber": ""
+        },
+        {
+            "id": 3,
+            "email": "jhone@gmail.com",
+            "password": "Jhone72!",
+            "firstName": "Jhone",
+            "lastName": "Dohe",
+            "address": "",
+            "phoneNumber": ""
+        }
+    ]
+}
+

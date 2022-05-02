@@ -1,0 +1,4 @@
+<select class="product-sort" name="product-sort" id="product-sort" [formControl]="selectedSort" (change)="handleSortChange()">
+    <option value="" disabled>Select Sort</option>
+    <option [value]="sortMenu.id" *ngFor="let sortMenu of sortMenuList">{{sortMenu.title}}</option>
+</select>

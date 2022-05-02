@@ -1,0 +1,19 @@
+<div class="main-banner">
+    <div class="main-banner-text">
+        <p class="promobox-text-1">Limited Time: Online Only!</p>
+        <p class="promobox-text-2">FINAL<br>CLEARANCE</p>
+        <p class="promobox-text-3">Take 20% Off ‘Sale Must-Haves'</p>
+        <div class="promobox-btn">
+            <a (click)="shopNow()" class="promobox__btn">SHOP NOW!</a>
+        </div>
+    </div>
+</div>
+
+<section class="categories-sections">
+    <p class="collections">Collections</p>
+    <div class="sections">
+        <div *ngFor="let category of categories" class="section-item">
+            <app-category [category]="category" (onNavigatedTo)="navigateToCategory($event)"></app-category>
+        </div>
+    </div>
+</section>

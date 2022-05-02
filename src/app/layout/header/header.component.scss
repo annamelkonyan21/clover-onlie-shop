@@ -1,0 +1,55 @@
+@import "src/assets/styles/variables";
+
+.header {
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid $border-color;
+
+        .head-info {
+            .head-main-info {
+                display: flex;
+
+                .logo {
+                    width: 50px;
+                }
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    color: $color;
+                    font-weight: 900;
+
+                    &:hover {
+                        color: $dark-hover-color;
+                    }
+                }
+            }
+
+            .head-sub-info {
+                color: $sub-color;
+                font-size: 12px;
+            }
+        }
+
+        .account {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+
+            i {
+                padding: 5px;
+            }
+
+            .badge {
+
+            }
+        }
+    }
+
+    .icon {
+        cursor: pointer;
+    }
+}

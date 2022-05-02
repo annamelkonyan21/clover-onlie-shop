@@ -1,0 +1,16 @@
+<div [ngStyle]="{'background-image': 'url(' + product.images[0] + ')'}"
+     (click)="navigateToProduct()"
+     class="product">
+    <p *ngIf="product.discount" class="product-card-discount">
+        -<span>{{product.discount}}</span>%
+    </p>
+    <div class="product-card-info">
+        <p class="product-card-price">
+            <span *ngIf="product.discount" class="discount">{{product.price | currency}}</span>
+            {{product.price | pricePipe: product.discount | currency}}
+        </p>
+        <p class="goods-card-title">
+            <span>{{product.productTitle}}</span>
+        </p>
+    </div>
+</div>

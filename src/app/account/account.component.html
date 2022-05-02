@@ -1,0 +1,8 @@
+<div  *ngIf="user" class="account-body">
+    <p class="account-name">{{user.firstName}} {{user.lastName}}</p>
+    <div class="account-info">
+        <p class="account-label">Email: <span class="account-text">{{user.email}}</span></p>
+        <p class="account-label">Address: <span class="account-text">{{user.address || 'N/A'}}</span></p>
+        <p class="account-label">Phone number: <span class="account-text">{{user.phoneNumber || 'N/A'}}</span></p>
+    </div>
+</div>

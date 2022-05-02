@@ -1,0 +1,28 @@
+<form [formGroup]="singInForm">
+    <div>
+        <label for="email">
+            Email
+        </label>
+        <input id="email" type="text" formControlName="email">
+        <div *ngIf="(email.invalid && email.touched) || email.dirty ">
+            <small *ngIf="email.errors && email.errors['required']" class="text-danger">
+                Email is required
+            </small>
+            <small *ngIf="email.errors && email.errors['pattern']" class="text-danger">
+                Please enter valid email
+            </small>
+        </div>
+    </div>
+    <div>
+        <label for="password">
+            Password
+        </label>
+        <input id="password" type="password" formControlName="password">
+        <div *ngIf="(password.invalid && password.touched) || password.dirty">
+            <small *ngIf="password.errors && password.errors['required']" class="text-danger">
+                Password is required
+            </small>
+        </div>
+    </div>
+    <button class="primary-button" type="submit" (click)="login()">Login</button>
+</form>

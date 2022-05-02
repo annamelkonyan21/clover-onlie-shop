@@ -1,0 +1,39 @@
+@import '../../../assets/styles/variables.scss';
+
+.collections {
+
+    .collection-main {
+        display: flex;
+        justify-content: space-evenly;
+
+        .collection-body {
+            width: 100%;
+
+            .top-panel {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 12px
+            }
+        }
+    }
+
+    .infinite-scroll {
+        height: 700px;
+        overflow-y: auto;
+        display: block;
+        overflow-x: hidden;
+
+        .collection-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            app-product-item {
+                width: 32%;
+                height: 300px;
+                margin: 10px 0 10px 10px;
+            }
+        }
+    }
+}

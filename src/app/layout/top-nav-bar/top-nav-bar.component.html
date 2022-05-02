@@ -1,0 +1,10 @@
+<div class="header-panel">
+    <nav class="nav-bar">
+        <ul class="site-nav">
+            <li class="menu-item" *ngFor="let category of categories"
+                (click)="navigateTo(category.path)">
+                {{category.title}}
+            </li>
+        </ul>
+    </nav>
+</div>

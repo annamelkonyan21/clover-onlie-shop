@@ -1,0 +1,9 @@
+@import '../../../../assets/styles/variables.scss';
+
+.carousel {
+    .image {
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}

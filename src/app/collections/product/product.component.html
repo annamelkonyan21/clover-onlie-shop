@@ -1,0 +1,21 @@
+<ng-container *ngIf="product">
+    <h3 class="product-title">{{product.productTitle}}</h3>
+    <app-carousel [images]="product.images"></app-carousel>
+    <div class="product-description">
+        <p class="product-card-price">
+            Price
+            <span *ngIf="product.discount" class="discount">{{product.price | currency}}</span>
+            {{product.price | pricePipe: product.discount | currency}}
+        </p>
+        <p *ngIf="product.discount" class="product-card-discount">
+            Discount -<span>{{product.discount}}</span>%
+        </p>
+        <p *ngIf="product.categoryId" class="product-card-discount">
+            Category -<span>{{product.categoryId}}</span>
+        </p>
+        <p *ngIf="product?.sizes?.length" class="product-card-discount">
+            Size -<span *ngFor="let size of product.sizes">{{size}}</span>
+        </p>
+    </div>
+    <button class="primary-button">Add to Card</button>
+</ng-container>

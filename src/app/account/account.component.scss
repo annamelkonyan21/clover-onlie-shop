@@ -1,0 +1,43 @@
+@import '../../assets/styles/variables';
+
+.account {
+
+    .account-body {
+        width: 30%;
+        padding: 16px;
+        margin: 16px;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+
+        .account-name {
+            color: $color;
+            font-size: 16px;
+            font-style: italic;
+
+        }
+
+        .account-info {
+            font-size: 12px;
+
+            p {
+                padding: 5px 0;
+            }
+
+            .account-label {
+                color: $dark-hover-color;
+                font-weight: 700;
+            }
+
+            .account-text {
+                color: $color;
+                font-weight: 100;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 16px 20px rgb(0 0 0 / 10%), 0 0 20px rgb(0 0 0 / 10%);
+        }
+    }
+
+
+}

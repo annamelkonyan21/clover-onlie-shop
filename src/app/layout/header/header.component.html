@@ -1,0 +1,26 @@
+<div class="header-container">
+    <div class="head-info">
+        <div class="head-main-info">
+            <img class="logo" src="assets/img/logo.svg">
+            <a [routerLink]="'/categories'" class="title">{{pageName | uppercase}}</a>
+        </div>
+        <div class="head-sub-info">
+            <p>Smarter Shopping, Better Living!</p>
+        </div>
+    </div>
+    <div class="account">
+        <span *ngIf="user">{{user.firstName}} {{user.lastName}}</span>
+        <i class="icon icon-user" (click)="account()"></i>
+        <ng-container *ngIf="!user; else close">
+            <i class="icon icon-enter" (click)="login()"></i>
+        </ng-container>
+        <ng-template #close>
+            <i class="icon icon-exit" (click)="logout()"></i>
+        </ng-template>
+        <div>
+            <i class="icon icon-cart"></i>
+            <p class="badge badge-primary">11</p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,44 @@
+@import '../../../assets/styles/variables.scss';
+
+.authentication {
+
+    .head-main-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 60px;
+        }
+
+        a {
+            color: $color;
+
+            &:hover {
+                color: $dark-hover-color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .main-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .change-type {
+        text-align: center;
+        font-style: oblique;
+        color: $color;
+        cursor: pointer;
+    }
+
+    .title {
+        color: $color;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 50px 16px 16px 16px;
+        text-align: center;
+    }
+}
